@@ -1,7 +1,6 @@
 #lang racket
-;With applicative order - there will be an infinite evaluation in procedure p.
-;With normal order - procedure test will return zero.
-
+;При аппликативном порядке вычислений произойдёт зацикливание в процедуре p, при нормальном - процедура test вернёт результат, равный нулю
+;infinite evaluation - в значении бесконечное вычисление в процедуре р 
 (define (p) (p))
 
 (define (test x y)
